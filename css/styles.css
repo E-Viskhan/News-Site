@@ -20,22 +20,31 @@ footer {
 	position: relative;
 }
 
-#black-bar {
+.black-bar {
 	background-color: black;
 	color: white;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1;
 	padding: 20px 0;
 }
-#black-bar a {
+.black-bar a {
 	color: white;
 }
 
 .fixed-container {
-	width: 960px;
+	width: 1000px;
 	margin: 0 auto;
 	position: relative;
 }
 
-#datetime {
+.main-title {
+	font-size: inherit;
+	font-weight: inherit;
+	display: inline;
+}
+
+.datetime {
 	float: right;
 }
 
@@ -102,7 +111,7 @@ footer {
 	right: 560px;
 }
 
-#header {
+.header {
 	color: gray;
 	height: 85px;
 }
