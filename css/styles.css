@@ -45,9 +45,9 @@ footer {
 	word-spacing: -2px;
 }
 
-.datetime {
-	word-spacing: -3px;
+.datetime {	
 	float: right;
+	word-spacing: -3px;
 }
 
 #logo {
