@@ -96,11 +96,15 @@ footer {
 }
 
 .header-datetime {
+	margin: 53px 0 0 47px;
 	float: left;
 }
 
 .header-time {
-	background-image: url("/img/clock.png");
+	background-image: url("/img/icon-header-time.png");
+	background-repeat:no-repeat;
+	margin-left: 25px;
+	padding-left: 24px;
 }
 
 #search {
