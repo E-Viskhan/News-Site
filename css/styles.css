@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -107,24 +113,39 @@ footer {
 	padding-left: 24px;
 }
 
-#search {
-	background: #f3f3f3;
-	border: 0;
-	outline: none;
-	border-radius: 25px;/*
-	padding-left: 22px; */
-	width: 320px;
-	height: 45px;
-	padding: 0 0 0 22px;
-	position: absolute;
-	right: 0px;
-	top: 36px;
+.weather {
+    float: left;
+    margin: 50px 0 0px 30px;
+    padding: 2px 0 0 38px;
+    background-image: url(/img/IconWeather.png);
+    background-repeat: no-repeat;
+    word-spacing: -3px;
 }
 
-#submit {
+.search-form {
+    margin-top: 40px;
+    width: 320px;
+	height: 45px;
+	float: right;
+	position: relative;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    background: #f3f3f3;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    padding-left: 20px;
+}
+
+.submit {
 	position: absolute;
 	right: 20px;
-	top: 50px;
+	top: 50%;
+	/*из за свойства ниже вроде можно поставить top 50% и оно почему будет по центру, а без свойства ниже оно не так.*/
+	transform: translateY(-50%);
 	width: 16px;
 	height: 16px;
 	border: 0;
@@ -132,18 +153,7 @@ footer {
 	background-image: url('/img/search.png');
 	background-repeat: no-repeat;
 	outline: none;
-}
-
-#weather {
-	position: absolute;
-	top: 50px;
-	right: 367px;
-}
-
-#weather-image {
-	position: absolute;
-	top: 48px;
-	right: 415px; 	
+	cursor: pointer;
 }
 
 #menu-container {
