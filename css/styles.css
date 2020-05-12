@@ -4,11 +4,18 @@
 	box-sizing: border-box;
 }
 
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
 	min-width: 1000px;
 	font-family: Arial;
+	background-color: #f9f9f9;
 }
 
 h2 {
@@ -34,6 +41,7 @@ footer {
 
 .header {
 	color: gray;
+	background-color: white;
 }
 
 .black-bar {
@@ -60,10 +68,6 @@ footer {
 .datetime {	
 	float: right;
 	word-spacing: -3px;
-}
-
-.header-center {
-	min-height: 85px;
 }
 
 .logo {
@@ -156,26 +160,22 @@ footer {
 	cursor: pointer;
 }
 
-#menu-container {
-	height: 85px;
-}
-
-#menu-list {
+.menu-list {
 	list-style: none;
-	margin: 0;
-	padding: 34px 0 0;
+	margin-top: 35px;
+	min-height: 49px;
 }
 
 .menu-li {
 	display: inline;
-	margin-right: 30px;
+	margin-right: 37px;
 }
 
-#menu-list a {
+.menu-list a {
 	text-decoration: none;
 }
 
-#menu-list a:visited {
+.menu-list a:visited {
 	color: black;
 }
 

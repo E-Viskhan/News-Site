@@ -14,22 +14,20 @@
 				<time class="datetime" datetime="2019-06-19 12:30">12:30 19.06.2019</time>
 			</div>
 		</div>
-		<div class="fixed-container header-center">
+		<div class="fixed-container clearfix">
 			<a href="#"><img class="logo" src="img/logo.png" alt="logo"></a>
 			<label class="select-wrapper">Выбор города:
 				<select class="custom-select"><option value="Msc">Москва</option></select>
 			</label>
 			<time datetime="2019-06-19 10:48" class="header-datetime">19 июня, вторник <span class="header-time">10:48</span></time>
 			<span class="weather">+22 &deg;C</span>
-			<form class="search-form">
+			<form class="search-form" method="GET">
 				<input type="text" name="search" placeholder="Поиск по сайту" class="search">
-				<input type="submit" name="submit" class="submit" value="">
+				<input type="submit" name="submit" class="submit" value="" aria-label="Найти">
 			</form>
 		</div>
-	</header>
-	<!-- <nav id="menu-container">
-		<div class="fixed-container">
-			<ul id="menu-list">
+		<nav class="fixed-container">
+			<ul class="menu-list">
 				<li class="menu-li"><a href="#">Главная</a></li>
 				<li class="menu-li"><a href="#">Политика</a></li>
 				<li class="menu-li"><a href="#">Общество</a></li>
@@ -40,8 +38,9 @@
 				<li class="menu-li"><a href="#">Наука</a></li>
 				<li class="menu-li"><a href="#">Туризм</a></li>
 			</ul>
-		</div>
-	</nav>
+		</nav>
+	</header>
+	<!--
 	<main id="central-container">
 		<div class="fixed-container">
 			<div id="column-left">
