@@ -20,6 +20,16 @@ footer {
 	position: relative;
 }
 
+.fixed-container {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header {
+	color: gray;
+}
+
 .black-bar {
 	background-color: #00122f;
 	color: white;
@@ -28,23 +38,17 @@ footer {
 	line-height: 1;
 	padding: 20px 0;
 }
+
+.main-title {
+	font: inherit;
+	display: inline;
+	word-spacing: -2px;
+}
+
 .black-bar a {
 	color: white;
 	text-decoration: none;
 	border-bottom: 1px solid white;
-}
-
-.fixed-container {
-	width: 1000px;
-	margin: 0 auto;
-	position: relative;
-}
-
-.main-title {
-	font-size: inherit;
-	font-weight: inherit;
-	display: inline;
-	word-spacing: -2px;
 }
 
 .datetime {	
@@ -52,10 +56,51 @@ footer {
 	word-spacing: -3px;
 }
 
-#logo {
-	height: 40px;
+.header-center {
+	min-height: 85px;
+}
+
+.logo {
+	float: left;
+	margin-top: 40px;
+}
+
+
+.select-wrapper {
+	float: left;
+	position: relative;	
+	/* обнуляем шрифт, чтобы убрать текст label */
+	font-size: 0;
+	margin: 53px 0 0 63px;
+}
+
+.select-wrapper::after {
+	content: '';
 	position: absolute;
-	top: 40px;
+	bottom: 0;
+	left: 0;
+	right: 15px;
+	height: 1px;
+	border-bottom: 2px dashed #448ccb;
+}
+
+.custom-select {
+	border: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* Восстанавливаем шрифт */
+	font-size: 16px;
+	padding-right: 15px;
+	background: url("/img/down-arrow.png") 100% center no-repeat;
+}
+
+.header-datetime {
+	float: left;
+}
+
+.header-time {
+	background-image: url("/img/clock.png");
 }
 
 #search {
@@ -95,29 +140,6 @@ footer {
 	position: absolute;
 	top: 48px;
 	right: 415px; 	
-}
-#time {
-	position: absolute;
-	top: 50px;
-	right: 470px;
-}
-
-#watch-image {
-	position: absolute;
-	top: 50px;
-	right: 515px;
-	height: 21px;
-}
-
-#day {
-	position: absolute;
-	top: 50px;
-	right: 560px;
-}
-
-.header {
-	color: gray;
-	height: 85px;
 }
 
 #menu-container {
